@@ -16,4 +16,4 @@ Base on type of each question -> we have class handle business logic correspondi
 
 Please see diagram image bellow
 
-![Alt text](1.jpg?raw=true)
+![Alt text](https://drive.google.com/file/d/1TlfekLRco6NHLEPEik7BYKcOuGNGqNtC/view)
