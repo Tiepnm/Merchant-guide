@@ -16,4 +16,23 @@ Base on type of each question -> we have class handle business logic correspondi
 
 Please see diagram image bellow
 
-![Alt text](https://drive.google.com/file/d/1TlfekLRco6NHLEPEik7BYKcOuGNGqNtC/view)
+![Alt text](https://doc-14-c0-docs.googleusercontent.com/docs/securesc/j0cnh0rjqvil8d21ekenkf1ofg6gnp0t/vjg69koi1nvpt1fct12su6lef2fndeuj/1550649600000/01781326887403023996/01781326887403023996/1TlfekLRco6NHLEPEik7BYKcOuGNGqNtC?e=view&nonce=2djsjn8brn27o&user=01781326887403023996&hash=7rgg618p724vv5n9efgkl03hvv4i31cp)
+
+
+
+##Compile and running Require
+Java 8 installation require
+Maven 3 installation require
+To run application in IDE please start GalaxyMerchantApplication.java.
+
+Use the below commands to build and run application:
+
+mvn package
+
+A jar package name Merchant-Galaxy-1.0-SNAPSHOT.jar will be place in target/ folder
+
+Command to start application:
+
+java -jar Merchant-Galaxy-1.0-SNAPSHOT.jar
+
+To execute all the test cases: mvn test
