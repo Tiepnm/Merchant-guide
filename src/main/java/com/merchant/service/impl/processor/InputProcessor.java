@@ -26,7 +26,7 @@ public class InputProcessor implements ProcessorService<String> {
     public void handle(String filePath) throws Exception {
         List<String> inputs = getDataFromFile(filePath);
         MappingData mappingData = processHandleData(inputs);
-        if (mappingData != null) {
+        if (this.chain != null && mappingData != null) {
             this.chain.handle(mappingData);
         }
     }
@@ -71,14 +71,9 @@ public class InputProcessor implements ProcessorService<String> {
     private List<String> getDataFromFile(String filePath) throws IOException {
         List<String> inputs = new ArrayList<>();
         BufferedReader bufferedReader;
-        //   if (filePath == null) {
         ClassLoader classLoader = getClass().getClassLoader();
         InputStream in = classLoader.getResourceAsStream(filePath);
         bufferedReader = new BufferedReader(new InputStreamReader(in));
-//        } else {
-//            FileReader fileReader = new FileReader(filePath);
-//            bufferedReader = new BufferedReader(fileReader);
-//        }
         String line;
         while ((line = bufferedReader.readLine()) != null) {
             inputs.add(line);
